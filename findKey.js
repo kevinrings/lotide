@@ -15,6 +15,8 @@ const assertEqual = function(actual, expected) {
   }
  };
 
+ module.exports = findKey;
+
  console.log(findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
@@ -32,6 +34,8 @@ const restaurants = {
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 };
+
+
 
 assertEqual(findKey(restaurants, x => x.stars === 2), "noma");
 assertEqual(findKey(restaurants, x => x.stars === 4), undefined);

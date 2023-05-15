@@ -32,6 +32,8 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
+module.exports = map;
+
 const results2 = map(words, word => word[0]);
 assertArraysEqual(results2, ['g', 'c', 't', 'm', 't']); // should pass
 

@@ -33,6 +33,7 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
+module.exports = letterPositions;
 assertArraysEqual(letterPositions("hello").e, [1]);
 
 // Alternatively, use a for...of loop to loop over the characters in the string

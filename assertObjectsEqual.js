@@ -51,3 +51,7 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 assertObjectsEqual({a: '1', b: 2 }, {b: 2, a: '1'});
+
+module.exports = assertObjectsEqual;
+
+// The util module provides utility functions for debugging purposes. To access these functions, we need to call them by require('util'). The util.inspect() method is an inbuilt application programming interface of the util module which is intended for debugging and returns a string representation of the object.
