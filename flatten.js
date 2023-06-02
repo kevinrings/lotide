@@ -36,17 +36,3 @@ module.exports = flatten;
 console.log(flatten([1, 2, [3, 4], 5, [6]])); // [1, 2, 3, 4, 5, 6]
 
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6])
-
-// const flatten = function(source) {
-//   let flatt = [];
-//   for (i = 0; i < source.length; i++) {
-//     if (Array.isArray(source[i])) {
-//       flatt = flatt.concat(flatten(source[i]));
-//     } else {
-//       flatt.push(source[i]);
-//     }
-//   }
-//   return flatt;
-// }
-
-// console.log(flatten([1, 2, [3, 4], 5, [6]])); // [1, 2, 3, 4, 5, 6]

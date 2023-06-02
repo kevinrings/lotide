@@ -35,23 +35,3 @@ const eqArrays = function(arr1, arr2) {
 
 module.exports = letterPositions;
 assertArraysEqual(letterPositions("hello").e, [1]);
-
-// Alternatively, use a for...of loop to loop over the characters in the string
-// Manage 0-based counter using a variable and incrementing it within the loop
-/*
-const letterPositions = function(sentence) {
-  const results = {};
-  let index = 0;
-  for (const letter of sentence) {
-    if (letter !== ' ') {
-      if (!results[letter]) {
-        results[letter] = [];
-      }
-      results[letter].push(index);
-    }
-    index++;
-  }
-  return results;
-};
-*/
-

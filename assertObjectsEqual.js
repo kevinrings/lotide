@@ -19,7 +19,6 @@ const assertEqual = function(actual, expected) {
 };
 
 // Returns true if both objects have identical keys with identical values.
-// Otherwise you get back a big fat false!
 const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
@@ -53,5 +52,3 @@ const assertObjectsEqual = function(actual, expected) {
 assertObjectsEqual({a: '1', b: 2 }, {b: 2, a: '1'});
 
 module.exports = assertObjectsEqual;
-
-// The util module provides utility functions for debugging purposes. To access these functions, we need to call them by require('util'). The util.inspect() method is an inbuilt application programming interface of the util module which is intended for debugging and returns a string representation of the object.
